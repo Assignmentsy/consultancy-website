@@ -4,61 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .gallery figure {
+            margin: 0;
+        }
+        .gallery figcaption {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+        footer a {
+            text-decoration: none;
+            color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Image Gallery</h1>
-        <p>Browse through our collection of images related to consultancy, data analytics, and business transformation.</p>
+        <p>Explore visuals that highlight key areas of consultancy and business growth.</p>
     </header>
 
     <section>
         <h2>Gallery</h2>
-        <div>
+        <div class="gallery">
             <figure>
-                <img src="https://via.placeholder.com/200" alt="Data Analytics" width="200">
-                <figcaption>Data Analytics - <a href="https://via.placeholder.com">Source</a></figcaption>
+                <img src="https://via.placeholder.com/250?text=Data+Analytics" alt="Data Analytics">
+                <figcaption>Data Analytics - Turning data into insights.</figcaption>
             </figure>
             <figure>
-                <img src="https://via.placeholder.com/200" alt="IT Transformation" width="200">
-                <figcaption>IT Transformation - <a href="https://via.placeholder.com">Source</a></figcaption>
+                <img src="https://via.placeholder.com/250?text=Project+Management" alt="Project Management">
+                <figcaption>Project Management - Effective planning and execution.</figcaption>
             </figure>
             <figure>
-                <img src="https://via.placeholder.com/200" alt="Marketing Strategy" width="200">
-                <figcaption>Marketing Strategy - <a href="https://via.placeholder.com">Source</a></figcaption>
+                <img src="https://via.placeholder.com/250?text=Digital+Transformation" alt="Digital Transformation">
+                <figcaption>Digital Transformation - Leveraging technology for growth.</figcaption>
             </figure>
             <figure>
-                <img src="https://via.placeholder.com/200" alt="Project Management" width="200">
-                <figcaption>Project Management - <a href="https://via.placeholder.com">Source</a></figcaption>
+                <img src="https://via.placeholder.com/250?text=Marketing+Strategies" alt="Marketing Strategies">
+                <figcaption>Marketing Strategies - Building brand visibility.</figcaption>
             </figure>
             <figure>
-                <img src="https://via.placeholder.com/200" alt="Risk Analysis" width="200">
-                <figcaption>Risk Analysis - <a href="https://via.placeholder.com">Source</a></figcaption>
+                <img src="https://via.placeholder.com/250?text=Sustainability" alt="Sustainability">
+                <figcaption>Sustainability - Integrating eco-friendly practices.</figcaption>
             </figure>
             <figure>
-                <img src="https://via.placeholder.com/200" alt="Sustainability Efforts" width="200">
-                <figcaption>Sustainability Efforts - <a href="https://via.placeholder.com">Source</a></figcaption>
+                <img src="https://via.placeholder.com/250?text=Leadership" alt="Leadership">
+                <figcaption>Leadership - Inspiring innovation and change.</figcaption>
             </figure>
             <figure>
-                <img src="https://via.placeholder.com/200" alt="Change Management" width="200">
-                <figcaption>Change Management - <a href="https://via.placeholder.com">Source</a></figcaption>
+                <img src="https://via.placeholder.com/250?text=IT+Infrastructure" alt="IT Infrastructure">
+                <figcaption>IT Infrastructure - Enhancing operational efficiency.</figcaption>
             </figure>
             <figure>
-                <img src="https://via.placeholder.com/200" alt="Digital Economy" width="200">
-                <figcaption>Digital Economy - <a href="https://via.placeholder.com">Source</a></figcaption>
+                <img src="https://via.placeholder.com/250?text=Collaboration" alt="Collaboration">
+                <figcaption>Collaboration - Strengthening teamwork and productivity.</figcaption>
             </figure>
             <figure>
-                <img src="https://via.placeholder.com/200" alt="Business Strategy" width="200">
-                <figcaption>Business Strategy - <a href="https://via.placeholder.com">Source</a></figcaption>
+                <img src="https://via.placeholder.com/250?text=Risk+Management" alt="Risk Management">
+                <figcaption>Risk Management - Mitigating challenges effectively.</figcaption>
             </figure>
             <figure>
-                <img src="https://via.placeholder.com/200" alt="Team Collaboration" width="200">
-                <figcaption>Team Collaboration - <a href="https://via.placeholder.com">Source</a></figcaption>
+                <img src="https://via.placeholder.com/250?text=Strategy" alt="Strategy">
+                <figcaption>Strategy - Driving impactful business decisions.</figcaption>
             </figure>
         </div>
     </section>
 
     <footer>
-        <p><a href="index.html">Back to Home</a></p>
+        <a href="index.html">Back to Home</a>
     </footer>
 </body>
 </html>
