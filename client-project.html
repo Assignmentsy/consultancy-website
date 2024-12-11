@@ -6,46 +6,83 @@
     <title>Client Project Scope</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
             color: #333;
         }
-        header, footer {
-            background-color: #f4f4f4;
-            padding: 10px;
+        header {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 20px;
             text-align: center;
-            border-radius: 5px;
+            border-bottom: 3px solid #003d82;
         }
-        h1, h2, h3 {
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            margin: 5px 0 0;
+        }
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 900px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
             color: #0056b3;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #e1e4ea;
+            padding-bottom: 5px;
         }
-        ul {
+        section ul, section ol {
             margin: 10px 0;
-            padding: 0 20px;
+            padding-left: 20px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
         }
-        table, th, td {
+        table th, table td {
             border: 1px solid #ddd;
-        }
-        th, td {
             padding: 10px;
             text-align: left;
         }
-        th {
+        table th {
             background-color: #0056b3;
             color: white;
         }
-        a {
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-top: 2px solid #ddd;
+            margin-top: 20px;
+        }
+        footer a {
             color: #0056b3;
             text-decoration: none;
         }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        a {
+            color: #0056b3;
+        }
         a:hover {
             text-decoration: underline;
+        }
+        .highlight {
+            background-color: #eef3fa;
+            border-left: 5px solid #0056b3;
+            padding: 10px;
+            margin: 10px 0;
         }
     </style>
 </head>
@@ -57,7 +94,9 @@
 
     <section>
         <h2>Client Needs Analysis</h2>
-        <p>The client approached us with the following key challenges and goals:</p>
+        <div class="highlight">
+            <p>The client approached us with the following key challenges and goals:</p>
+        </div>
         <ul>
             <li>Optimize operational workflows and enhance IT infrastructure.</li>
             <li>Develop a robust data-driven strategy for informed decision-making.</li>
@@ -89,103 +128,66 @@
 
     <section>
         <h2>Project Plan</h2>
-        <p>The high-level project timeline is structured into three phases:</p>
-        <ol>
-            <li><b>Phase 1: Assessment and Planning</b>
-                <ul>
-                    <li>Duration: 2 weeks</li>
-                    <li>Activities: Data collection, stakeholder interviews, current system evaluation.</li>
-                </ul>
-            </li>
-            <li><b>Phase 2: Strategy Development</b>
-                <ul>
-                    <li>Duration: 3 weeks</li>
-                    <li>Activities: Data analysis, IT solution design, marketing strategy creation.</li>
-                </ul>
-            </li>
-            <li><b>Phase 3: Implementation and Monitoring</b>
-                <ul>
-                    <li>Duration: 4 weeks</li>
-                    <li>Activities: System implementation, training, performance tracking, and reporting.</li>
-                </ul>
-            </li>
-        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>Phase</th>
+                    <th>Duration</th>
+                    <th>Key Activities</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Assessment and Planning</td>
+                    <td>2 weeks</td>
+                    <td>Data collection, stakeholder interviews, current system evaluation.</td>
+                </tr>
+                <tr>
+                    <td>Strategy Development</td>
+                    <td>3 weeks</td>
+                    <td>Data analysis, IT solution design, marketing strategy creation.</td>
+                </tr>
+                <tr>
+                    <td>Implementation and Monitoring</td>
+                    <td>4 weeks</td>
+                    <td>System implementation, training, performance tracking, and reporting.</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
     <section>
         <h2>Risk Register</h2>
         <table>
-            <tr>
-                <th>Risk</th>
-                <th>Impact</th>
-                <th>Likelihood</th>
-                <th>Mitigation Plan</th>
-            </tr>
-            <tr>
-                <td>Data Inaccuracy</td>
-                <td>High</td>
-                <td>Medium</td>
-                <td>Conduct thorough validation checks during data collection.</td>
-            </tr>
-            <tr>
-                <td>Stakeholder Resistance</td>
-                <td>Medium</td>
-                <td>High</td>
-                <td>Organize workshops and training to ensure buy-in.</td>
-            </tr>
-            <tr>
-                <td>System Downtime</td>
-                <td>High</td>
-                <td>Low</td>
-                <td>Schedule backups and develop a disaster recovery plan.</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Risk</th>
+                    <th>Impact</th>
+                    <th>Likelihood</th>
+                    <th>Mitigation Plan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data Inaccuracy</td>
+                    <td>High</td>
+                    <td>Medium</td>
+                    <td>Conduct thorough validation checks during data collection.</td>
+                </tr>
+                <tr>
+                    <td>Stakeholder Resistance</td>
+                    <td>Medium</td>
+                    <td>High</td>
+                    <td>Organize workshops and training to ensure buy-in.</td>
+                </tr>
+                <tr>
+                    <td>System Downtime</td>
+                    <td>High</td>
+                    <td>Low</td>
+                    <td>Schedule backups and develop a disaster recovery plan.</td>
+                </tr>
+            </tbody>
         </table>
-    </section>
-
-    <section>
-        <h2>RACI Matrix</h2>
-        <p>The RACI matrix assigns roles and responsibilities as follows:</p>
-        <table>
-            <tr>
-                <th>Task</th>
-                <th>Responsible</th>
-                <th>Accountable</th>
-                <th>Consulted</th>
-                <th>Informed</th>
-            </tr>
-            <tr>
-                <td>Data Collection</td>
-                <td>Consultant</td>
-                <td>Project Manager</td>
-                <td>Client Stakeholders</td>
-                <td>Team Members</td>
-            </tr>
-            <tr>
-                <td>Strategy Development</td>
-                <td>Consultant</td>
-                <td>Project Manager</td>
-                <td>Marketing Team</td>
-                <td>Client Leadership</td>
-            </tr>
-            <tr>
-                <td>Implementation</td>
-                <td>IT Team</td>
-                <td>Client Leadership</td>
-                <td>Consultant</td>
-                <td>All Stakeholders</td>
-            </tr>
-        </table>
-    </section>
-
-    <section>
-        <h2>Success Criteria</h2>
-        <p>Success will be measured using the following key indicators:</p>
-        <ul>
-            <li>20% improvement in operational efficiency within 6 months.</li>
-            <li>Increased customer engagement by 30% through targeted marketing efforts.</li>
-            <li>Successful deployment of IT systems with minimal disruption.</li>
-            <li>Positive feedback from stakeholders regarding the adoption of sustainable practices.</li>
-        </ul>
     </section>
 
     <section>
