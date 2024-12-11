@@ -44,19 +44,27 @@
             text-decoration: underline;
         }
         .hero {
-            background-image: url('https://www.scnsoft.com/it-consulting/cover-pic-it-consulting-new-1.svg');
-            background-size: cover;
-            background-position: center;
-            padding: 60px 20px;
-            color: white;
+            background-color: #e0eaff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 40px 20px;
             text-align: center;
         }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
         .hero h2 {
-            font-size: 2.5em;
-            margin: 0;
+            font-size: 2.2em;
+            color: #0056b3;
         }
         .hero p {
             font-size: 1.2em;
+            color: #333;
         }
         section {
             padding: 20px;
@@ -113,6 +121,7 @@
     </nav>
 
     <div class="hero">
+        <img src="https://via.placeholder.com/1200x400" alt="Professional teamwork illustration">
         <h2>Your Trusted Partner in Consultancy</h2>
         <p>Empowering businesses with data-driven insights and strategic solutions</p>
     </div>
