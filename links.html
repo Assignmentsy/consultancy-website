@@ -41,6 +41,24 @@
         ul li a:hover {
             text-decoration: underline;
         }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .image-gallery a {
+            text-decoration: none;
+            display: block;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
         footer {
             background-color: #f4f4f4;
             text-align: center;
@@ -68,6 +86,30 @@
             <li><a href="https://analytics.google.com/">Google Analytics</a> - Tools to track and analyze web data.</li>
             <li><a href="https://www2.deloitte.com/">Deloitte Insights</a> - Industry insights and consulting solutions.</li>
         </ul>
+    </section>
+
+    <section>
+        <h2>Image Gallery</h2>
+        <div class="image-gallery">
+            <a href="https://hbr.org/">
+                <img src="https://via.placeholder.com/150" alt="Harvard Business Review">
+            </a>
+            <a href="https://www.mckinsey.com/">
+                <img src="https://via.placeholder.com/150" alt="McKinsey & Company">
+            </a>
+            <a href="https://www.forbes.com/business/">
+                <img src="https://via.placeholder.com/150" alt="Forbes Business">
+            </a>
+            <a href="https://www.pmi.org/">
+                <img src="https://via.placeholder.com/150" alt="Project Management Institute">
+            </a>
+            <a href="https://analytics.google.com/">
+                <img src="https://via.placeholder.com/150" alt="Google Analytics">
+            </a>
+            <a href="https://www2.deloitte.com/">
+                <img src="https://via.placeholder.com/150" alt="Deloitte Insights">
+            </a>
+        </div>
     </section>
 
     <footer>
