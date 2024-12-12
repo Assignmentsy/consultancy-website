@@ -50,8 +50,23 @@
             margin-bottom: 15px;
         }
 
-        section h3 {
-            color: #333;
+        .placeholder {
+            display: block;
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+            text-align: center;
+            line-height: 200px;
+            color: #666;
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+        }
+
+        ul li, ol li {
             margin-bottom: 10px;
         }
 
@@ -70,14 +85,6 @@
         table th {
             background-color: #0056b3;
             color: white;
-        }
-
-        ul, ol {
-            margin-left: 20px;
-        }
-
-        ul li, ol li {
-            margin-bottom: 10px;
         }
 
         .back-button {
@@ -119,72 +126,40 @@
 
     <main>
         <section>
-            <h2>Client Project Introduction & Client Needs Analysis</h2>
-            <p>
-                The client is a leading UK-based network provider specializing in high-speed internet, mobile communication services, and cloud-based solutions. The company faces challenges related to aging IT infrastructure, underutilized data analytics, ineffective marketing strategies, and the need for sustainable operations.
-            </p>
+            <h2>Client Background</h2>
+            <h3>Single Point of Contact (SpOC)</h3>
+            <p>The client is represented by the Project Manager of a UK-based network service provider specializing in high-speed internet and digital communication services...</p>
+            <div class="placeholder">[Placeholder for organizational structure diagram]</div>
+        </section>
+
+        <section>
+            <h2>Project Introduction</h2>
+            <p>The project focuses on integrating predictive analytics...</p>
             <ul>
-                <li><b>Challenges:</b> Outdated systems, lack of data insights, ineffective customer engagement, and sustainability concerns.</li>
-                <li><b>Key Business Drivers:</b> Operational efficiency, customer retention, and sustainability.</li>
-                <li><b>Stakeholders:</b> Internal teams, customers, regulatory bodies, and industry partners.</li>
+                <li><b>Objective:</b> Identify potential network failures.</li>
+                <li><b>Key Risks:</b> Address unplanned downtime and customer churn.</li>
             </ul>
         </section>
 
         <section>
-            <h2>Client Project Scope Definition & Ethics Protocol Requirements</h2>
-            <p>
-                The project will focus on IT modernization, data analytics integration, targeted marketing campaigns, and sustainable initiatives. Exclusions include hardware upgrades and customer-facing app development due to scope constraints.
-            </p>
+            <h2>Project Scope & Exclusions</h2>
             <ul>
-                <li><b>Ethics Protocol:</b> Compliance with GDPR standards, inclusivity, and transparency throughout the project lifecycle.</li>
+                <li><b>Scope:</b> Develop predictive analytics for network operations...</li>
+            </ul>
+            <div class="placeholder">[Placeholder for GDPR compliance visual]</div>
+        </section>
+
+        <section>
+            <h2>Data Model & Analysis Hypothesis</h2>
+            <p>The hypothesis is that analyzing historical network logs...</p>
+            <ul>
+                <li><b>Fact Table:</b> Contains network failure rates.</li>
+                <li><b>Dimension Tables:</b> Categorized by time, location...</li>
             </ul>
         </section>
 
         <section>
-            <h2>Client Project Plan & Risk Register</h2>
-            <h3>Project Plan</h3>
-            <ol>
-                <li><b>Phase 1:</b> Assessment and planning (2 weeks).</li>
-                <li><b>Phase 2:</b> Strategy development (4 weeks).</li>
-                <li><b>Phase 3:</b> Implementation and monitoring (6 weeks).</li>
-            </ol>
-
-            <h3>Risk Register</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Risk</th>
-                        <th>Likelihood</th>
-                        <th>Impact</th>
-                        <th>Mitigation Strategy</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Data Breaches</td>
-                        <td>Medium</td>
-                        <td>High</td>
-                        <td>Implement encryption and conduct security audits.</td>
-                    </tr>
-                    <tr>
-                        <td>Resistance to Change</td>
-                        <td>High</td>
-                        <td>Medium</td>
-                        <td>Conduct stakeholder training sessions.</td>
-                    </tr>
-                    <tr>
-                        <td>System Downtime</td>
-                        <td>Medium</td>
-                        <td>High</td>
-                        <td>Schedule migrations during off-peak hours.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section>
-            <h2>Client Project RACI Matrix & Communication Plan</h2>
-            <h3>RACI Matrix</h3>
+            <h2>RACI Matrix & Communication Plan</h2>
             <table>
                 <thead>
                     <tr>
@@ -197,52 +172,19 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>IT system modernization</td>
-                        <td>IT Consultant</td>
+                        <td>Model Development</td>
+                        <td>Data Scientists</td>
                         <td>Project Manager</td>
-                        <td>IT Team</td>
+                        <td>IT Staff</td>
                         <td>Leadership</td>
-                    </tr>
-                    <tr>
-                        <td>Marketing campaign design</td>
-                        <td>Marketing Team</td>
-                        <td>Marketing Manager</td>
-                        <td>Consultant</td>
-                        <td>Customers</td>
-                    </tr>
-                    <tr>
-                        <td>Sustainability initiatives</td>
-                        <td>Environmental Consultant</td>
-                        <td>Project Manager</td>
-                        <td>NGO Advisors</td>
-                        <td>PR Team</td>
                     </tr>
                 </tbody>
             </table>
-
-            <h3>Communication Plan</h3>
-            <ul>
-                <li><b>Weekly Reports:</b> Shared with internal stakeholders via email.</li>
-                <li><b>Monthly Meetings:</b> Progress reviews and milestone evaluations.</li>
-                <li><b>Final Presentation:</b> Summary of project outcomes and achievements.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Client Project Success Criteria</h2>
-            <ul>
-                <li>30% reduction in IT downtime within three months.</li>
-                <li>25% increase in customer retention through loyalty programs.</li>
-                <li>15% reduction in energy usage within the first year.</li>
-                <li>Improved marketing campaign ROI by 20% within six months.</li>
-            </ul>
         </section>
 
         <section>
             <h2>Client Project Reflection</h2>
-            <p>
-                This project demonstrates the value of aligning consultancy practices with sustainability and ethical principles. By focusing on operational efficiency and customer engagement, it highlights the long-term benefits of data-driven insights and stakeholder inclusivity.
-            </p>
+            <p>The integration of predictive analytics into the client’s network operations...</p>
         </section>
 
         <a href="index.html" class="back-button">Back to Home</a>
